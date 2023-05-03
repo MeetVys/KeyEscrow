@@ -1,11 +1,11 @@
 import requests
 
-gen_token_Keyesc = "https://127.0.0.1:5000/generatetokens"
-gen_token_server = "https://127.0.0.1:4000/generatetokens"
+gen_token_Keyesc = "https://172.17.0.3:5000/generatetokens"
+gen_token_server = "https://172.17.0.2:4000/generatetokens"
 
-LI_URL = "https://127.0.0.1:4000/LI"
+LI_URL = "https://172.17.0.2:4000/LI"
 
-Get_Keys_URL = "https://127.0.0.1:5000/getkeys"
+Get_Keys_URL = "https://172.17.0.3:5000/getkeys"
 
 response = requests.post(gen_token_Keyesc,json={"username" : "Admin_username" , "password": "Admin_username_password"},verify=False)
 if response.status_code ==200:
