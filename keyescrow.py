@@ -5,7 +5,7 @@ import secrets
 #os.environ['SSLKEYLOGFILE'] = '/home/sujeeth/network_security/key_escrow/sslkeylogfile'
 app = Flask(__name__)
 PORT = "5000"
-URL = "172.17.0.3"
+URL = "0.0.0.0"
 
 # Set up SSL/TLS context with keylog callback
 context = ssl.create_default_context(purpose=ssl.Purpose.CLIENT_AUTH)
