@@ -8,12 +8,12 @@ import time
 log_file = open("sslkeylogfile.log", "w")
 log_file.truncate()
 log_file.close()
-URL_ESCROW = "https://127.0.0.1:5000/keytoescrow"
+URL_ESCROW = "https://172.17.0.3:5000/keytoescrow"
 
 #os.environ['SSLKEYLOGFILE'] = '/home/sujeeth/network_security/key_escrow/sslkeylogfile'
 app = Flask(__name__)
 
-URL = "127.0.0.1"
+URL = "172.17.0.2"
 PORT = "4000"
 
 # Set up SSL/TLS context with keylog callback
